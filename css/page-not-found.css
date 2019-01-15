@@ -36,7 +36,7 @@
   display: inline-block;
   width: 120px;
   height: 120px;
-  background-image: url('../emoji.png');
+  background-image: url('../assets/emoji.png');
   background-size: cover;
   transform: scale(1.4);
   z-index: -1;
