@@ -67,6 +67,20 @@ let router = (evt) => {
 function createRootMarkup() {
   var markup = replaceNullData `
       <h1>This is root</h1>
+      <p>Wherever you are in this site, try to
+      add after <em>app.html</em> in the URL bar the following:</p>
+      <ul>
+          <li>
+            <p><code>#/</code> to go to root</p>
+          </li>
+          <li>
+            <p><code>#/station</code> to see all available stations</p>
+          </li>
+          <li>
+            <p><code>#/station/id</code> to see the specified station (for example,
+            the station <code>id</code> could be "S004")</p>
+          </li>
+      </ul>
   `;
 
   return markup;
