@@ -92,15 +92,13 @@ function getAllStations() {
 }
 
 function createAllStationsMarkup(stations) {
-    // <a href='#'>Go Back to Index</a>
-
     var markup = replaceNullData `
         <h5 class="mb-1">All stations</h5>
         ${stations.map((station, i) => `
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                  <p class="font-weight-bold text-dark"></p><span>${station.id}</span>
-                  <p class="font-weight-bold text-dark"></p><span>${station.nombre_estacion}</span>
+                  <p class="font-weight-bold text-dark"></p><b>Id:</b> <span>${station.id}</span>
+                  <p class="font-weight-bold text-dark"></p><b>Name:</b> <span>${station.nombre_estacion}</span>
               </li>
             </ul>
             `
@@ -119,8 +117,8 @@ function createOneStationMarkup(station) {
     var markup = replaceNullData `
             <h5 class="mb-1">One station</h5>
             <div>
-                <p class="font-weight-bold text-dark"></p><span>${station.id}</span>
-                <p class="font-weight-bold text-dark"></p><span>${station.nombre_estacion}</span>
+                <p class="font-weight-bold text-dark"></p><b>Id:</b> <span>${station.id}</span>
+                <p class="font-weight-bold text-dark"></p><b>Name:</b> <span>${station.nombre_estacion}</span>
             </div>
     `;
 
