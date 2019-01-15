@@ -147,7 +147,7 @@ function createPageNotFoundMarkup() {
 function replaceNullData(strings, ...parts) {
     var checkedMarkup = "";
     parts.forEach((part, index) => {
-        if (part === null) {
+        if (!part) {
             part = "data not available";
         }
 
