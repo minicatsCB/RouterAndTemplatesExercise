@@ -71,10 +71,11 @@ function createRootMarkup() {
       add after <em>app.html</em> in the URL bar the following:</p>
       <ul>
           <li>
-            <p><code>#/</code> to go to root</p>
+            <p><code>#/</code> to go to root or click the "Home" button</p>
           </li>
           <li>
-            <p><code>#/station</code> to see all available stations</p>
+            <p><code>#/station</code> to see all available stations or click
+            the "All stations" button</p>
           </li>
           <li>
             <p><code>#/station/id</code> to see the specified station (for example,
